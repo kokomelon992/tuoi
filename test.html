@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tử vi bói toán</title>
+    <style>
+	 body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Đoán trước tương lai</h2>
+        <input type="number" id="ageInput" placeholder="Nhập số tuổi của bạn">
+        <button onclick="displayAge()">Hiển thị</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+	 function displayAge() {
+            const age = document.getElementById("ageInput").value;
+            document.getElementById("output").textContent = "Số tuổi của bạn là " + age;
+        }
+    </script>
+</body>
+</html>
